@@ -4,7 +4,6 @@ metadata:
   name: annotaions
   annotations:
   buildURL: "https://jenkins.com/expense/job/backend/23"
-  imageregistry: "https:github.com"
 spec:
   containers:
    - name : nginx
