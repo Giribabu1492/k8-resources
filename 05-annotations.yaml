@@ -1,9 +1,10 @@
-apiVersion: v2
+
 kind: Pod
+apiVersion: v1
 metadata:
-  name: annotaions
+  name: anootaions
   annotations:
-  buildURL: "https://jenkins.com/expense/job/backend/23"
+    buildURL: "https://jenkins.com/expense/job/backend/23"
 spec:
   containers:
    - name : nginx
