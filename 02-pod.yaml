@@ -1,4 +1,4 @@
-kind: pod
+kind: Pod
 apiVersion: v1
 metadata:
   name: mynginx
@@ -7,3 +7,4 @@ spec:
   - name : nginx
     image: nginx
   
+
