@@ -2,6 +2,7 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: mynginx
+  namespace: expense
 spec:
   containers: 
   - name : nginx
