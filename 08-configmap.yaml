@@ -6,5 +6,5 @@ metadata:
   name: myconfig
 data: 
   course: "Devops"
-  duration: "130hrs"  
+  duration: "30hrs"  
 
