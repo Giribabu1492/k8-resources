@@ -12,7 +12,7 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 80
-
+# default it will go into cluster ip wchich we can access from inside cluster only
 ---
 
 kind: Pod
