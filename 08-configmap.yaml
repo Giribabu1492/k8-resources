@@ -1,10 +1,10 @@
 #for pod configuration details need to maintain here
 
 apiVersion: v1
-kind: Pod
+kind: ConfigMap
 metadata:
   name: myconfig
 data: 
   course: "Devops"
   duration: "120hrs"  
-  
+
