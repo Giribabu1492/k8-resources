@@ -7,9 +7,10 @@ spec:
   - name: nginx
     image: nginx
     resources: 
-      requests:
-        memory: "68Mi"
-        cpu: "100m"
-      limits:
-        memory: "128Mi"
-        cpu:: "150m"
+      resources:
+        limits:
+          cpu: "500m"         # 500 millicores (0.5 vCPU)
+          memory: "512Mi"     # 512 MiB RAM
+        requests:
+          cpu: "250m"         # 0.25 vCPU
+          memory: "256Mi"     # 256 MiB RAM
