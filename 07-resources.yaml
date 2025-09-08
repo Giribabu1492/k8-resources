@@ -6,7 +6,7 @@ spec:
   containers:
     - name: nginx
       image: nginx
-      resources:        # ✅ only once
+      resources:        
         limits:
           cpu: "500m"
           memory: "512Mi"
