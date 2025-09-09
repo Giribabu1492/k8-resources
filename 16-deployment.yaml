@@ -25,23 +25,19 @@ spec:
         image: giri1492/deployment:1.0.0
         ports:
         - containerPort: 80
-
-
-#deployment creation both pod and replica creation applies
-
-  kind: Service
-  apiVersion: v1
-  metadata:
+---
+apiVersion: v1
+kind: Service
+metadata:
   name: nginx
-  spec:
-    type: LoadBalancer
-    selector:
-      app: nginx
-      tier: frontend
-      purpose: deployment
-    ports: 
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 31152
-
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx
+    tier: frontend
+    purpose: deployment
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 31152
