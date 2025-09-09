@@ -30,17 +30,16 @@ spec:
     persistentVolumeClaim:
       claimName: efs-pv
 ---
-
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: nginx-lb
 spec:
   type: LoadBalancer
   selector:
-   purpose: "efs-static-demo"  
+    purpose: "efs-static-demo"  
   ports: 
-  - protocolo: TCP
+  - protocol: TCP
     port: 80
     targetPort: 80
     nodePort: 31150
