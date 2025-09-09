@@ -20,3 +20,8 @@ spec:
       containers:
       - name: nginx
         image: nginx
+
+
+#$ kubectl get replicaset
+#$ kubectl get pods
+# watch kubectl get pods
