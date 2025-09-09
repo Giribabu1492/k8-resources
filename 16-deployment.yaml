@@ -39,9 +39,9 @@ spec:
       app: nginx
       tier: frontend
       purpose: deployment
-  ports: 
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-    nodePort: 31152
+    ports: 
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 31152
 
